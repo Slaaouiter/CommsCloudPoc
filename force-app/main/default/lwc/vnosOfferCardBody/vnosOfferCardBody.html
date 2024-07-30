@@ -1,0 +1,61 @@
+<template>
+  <slot name="PriceAndJoinButton">
+    <div class="nds-grid">
+      <div class="nds-size_8-of-12">
+        <span class="vnos-amount">{amountText}</span>
+        <br />
+        <s>{initialAmountText}</s>
+        <br />
+      </div>
+      <div class="nds-size_4-of-12">
+        <button
+          style="background-color: black !important;"
+          class="nds-button nds-button_stretch nds-button_brand"
+          onclick={join}
+        >
+          {joinLabel}
+        </button>
+      </div>
+    </div>
+  </slot>
+  <slot name="AutoAppliedPromotionsAtBrowseOffer">
+    <div class="vnos-promotions-at-browse-offer">
+      <template
+        for:each={autoAppliedPromotionsAtBrowseOffer}
+        for:item="promotion"
+      >
+        <small key={promotion.code}
+          >&minus;{promotion.description}({promotion.chargeAmountText})<br
+        /></small>
+      </template>
+    </div>
+  </slot>
+  <slot name="AutoAppliedPromotionsAtCenter">
+    <div
+      class="vnos-promotions-at-center nds-m-top_medium nds-m-bottom_medium nds-p-top_medium nds-p-bottom_medium"
+    >
+      <div lwc:if={hasAutoAppliedPromotionsAtCenter}>
+        <h4 class="vnos-promotion-title vnos-center">
+          {membershipAdvantageLabel}
+        </h4>
+        <div class="vnos-promotion-radios">
+          <template
+            for:each={autoAppliedPromotionsAtCenter}
+            for:item="autoAppliedPromotionAtCenter"
+          >
+            <div
+              key={autoAppliedPromotionAtCenter.code}
+              class="nds-grid nds-wrap nds-grid_align-center"
+            >
+              <label
+                class="vnos-promotion-radio-label vnos-center nds-size--1-of-1"
+              >
+                {autoAppliedPromotionAtCenter.name}</label
+              ><input type="radio" checked="" />
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </slot>
+</template>

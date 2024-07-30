@@ -1,0 +1,60 @@
+.vnos-promotion-short{
+    font-size: 1rem;
+    color: black;
+}
+
+.vnos-promotion-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vnos-promotion-items input{
+    width: 2rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.vnos-center{
+    text-align: center;
+}
+
+
+
+.vnos-detail-radios{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+.vnos-radio-item{
+    background-color: #fffdfd;
+    color: #333;
+    padding: 1rem 0rem;
+    cursor: pointer;    
+    transition: all .2s ease-in;
+    text-align: center;
+    border-radius: 0!important;
+    border: 1px solid #ccc;
+}
+.vnos-radio-item-selected{
+    background-color: #333;
+    color: #fffdfd;
+}
+
+
+.vnos-grouped-offer{
+    align-items: center;
+}
+.vnos-data-options{
+    font-size: 1rem;
+    color: black;
+}
+.vnos-voice{
+    font-size: 1rem;
+    color: black;
+}
+
+.vnos-offer-item-tile{
+    min-height: 0!important;
+}

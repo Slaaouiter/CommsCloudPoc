@@ -1,0 +1,37 @@
+<template>
+  <div class="nds-dc-offerlist-container">
+    <slot name="offers">
+      <div class="vnos-offer-grid-view nds-dc-offer-grid-view">
+        <template for:each={catalog} for:item="offer">
+          <div key={offer.order} class="vnos-offer-board nds-dc-offer-board">
+            <c-vnos-lc-offer-card offer={offer} onselectoffer={selectOffer}>
+            </c-vnos-lc-offer-card>
+            <!--attribute-code-to-icon-position={attributeCodeToIconPosition}-->
+          </div>
+        </template>
+      </div>
+    </slot>
+    <slot name="previousButton">
+      <div class="nds-m-around_small">
+        <div class="nds-grid nds-grid_align-center">
+          <div
+            class="nds-grid nds-grid_align-center nds-wrap nds-button-group-row nds-size_1-of-1 nds-medium-size_8-of-12 nds-p-horizontal_medium"
+          >
+            <div
+              class="omniscript-btn-next nds-size_12-of-12 nds-m-bottom_x-small nds-medium-size_3-of-12"
+            >
+              <button
+                class="vlocity-btn nds-button nds-button_brand nds-button_stretch nds-p-around_xx-small nds-size_1-of-1"
+                type="button"
+                aria-label="Previous"
+                onclick={previous}
+              >
+                <label class="btnLabel">{previousLabel}</label>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </slot>
+  </div>
+</template>

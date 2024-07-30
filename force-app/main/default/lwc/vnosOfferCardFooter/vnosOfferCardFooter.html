@@ -1,0 +1,68 @@
+<template>
+  <slot name="attributes">
+    <template iterator:attribute={filteredCommercialAttributes}>
+      <div key={attribute.value.code}>
+        <div if:true={isGrouped} class="nds-grid">
+          <small
+            if:true={attribute.value.isInput}
+            class="nds-size--2-of-12 nds-p-top_large nds-p-left_x-small"
+          >
+            {attribute.value.name}
+          </small>
+          <small
+            if:false={attribute.value.isInput}
+            class="nds-size--2-of-12 nds-p-top_medium nds-p-left_x-small"
+          >
+            {attribute.value.name}
+          </small>
+          <c-vnos-offer-card-options
+            if:true={attribute.value.isInput}
+            class="nds-size--10-of-12"
+            attribute={attribute.value}
+            products={products}
+            selected-product={selectedProduct}
+            onselectoption={selectOption}
+          >
+          </c-vnos-offer-card-options>
+          <div
+            if:false={attribute.value.isInput}
+            class="nds-size--10-of-12 vnos-data-options nds-p-left_medium nds-p-top_small vnos-align-vertical-center"
+          >
+            {attribute.value.value}
+          </div>
+        </div>
+        <div if:false={isGrouped} class="nds-grid">
+          <small class="nds-size--2-of-12 nds-p-top_medium">
+            {attribute.value.name}
+          </small>
+
+          <div
+            class="nds-size--10-of-12 vnos-data-options nds-p-top_small nds-p-left_medium vnos-align-vertical-center"
+          >
+            {attribute.value.value}
+          </div>
+        </div>
+        <br />
+        <div if:true={attribute.first}>
+          <template
+            lwc:if={hasAutoAppliedPromotionsBelowFirstAttributes}
+            for:each={autoAppliedPromotionsBelowFirstAttribute}
+            for:item="autoAppliedPromotionBelowFirstAttribute"
+          >
+            <span key={autoAppliedPromotionBelowFirstAttribute.code}>
+              <div class="nds-grid">
+                <h2 class="vnos-promotion-radio-label">
+                  <span class="vnos-txt-oferta nds-m-right_medium"
+                    >{offerLabel}</span
+                  >
+                  {autoAppliedPromotionBelowFirstAttribute.name}
+                </h2>
+              </div>
+              <br />
+            </span>
+          </template>
+        </div>
+      </div>
+    </template>
+  </slot>
+</template>

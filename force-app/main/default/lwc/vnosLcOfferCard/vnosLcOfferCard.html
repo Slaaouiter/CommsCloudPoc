@@ -1,0 +1,32 @@
+<template>
+  <ul>
+    <li class="nds-dc-nds-item">
+      <article class="slds-tile slds-tile_board nds-dc-offer-item">
+        <c-vnos-offer-card-header
+          onloyaltyoptionchange={handleLoyaltyOptionChange}
+          auto-applied-promotions-at-top={selectedProduct.autoAppliedPromotions.Top}
+          product-name={selectedProduct.name}
+          promotions={selectedProduct.promotions}
+          has-loyalty={hasLoyalty}
+          is-loyalty-possible={isLoyaltyPossible}
+        ></c-vnos-offer-card-header>
+        <c-vnos-offer-card-body
+          initial-amount-text={initialAmountText}
+          amount-text={amountText}
+          auto-applied-promotions-at-browse-offer={selectedProduct.autoAppliedPromotionsAtBrowseOffer}
+          auto-applied-promotions-at-center={selectedProduct.autoAppliedPromotions.Center}
+          onselectproduct={selectProduct}
+        >
+        </c-vnos-offer-card-body>
+        <c-vnos-offer-card-footer
+          selected-product={selectedProduct}
+          auto-applied-promotions-below-first-attribute={selectedProduct.autoAppliedPromotions.BelowFirstAttribute}
+          is-grouped={isGrouped}
+          products={products}
+          onselectoption={changeSelectedProduct}
+        >
+        </c-vnos-offer-card-footer>
+      </article>
+    </li>
+  </ul>
+</template>

@@ -1,0 +1,19 @@
+.vnos-auto-applied-promotions-at-top{
+    background-color: black !important;
+    color: #ffffff;
+    margin: -1.3rem 3rem 0rem -0.5rem !important;
+    display: block;
+    padding: 1rem;
+    min-width: 10rem !important;
+    width: fit-content;
+}
+
+.vnos-center{
+    text-align: center;
+}
+
+.vnos-first-attribute{
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    color: #000000;
+}

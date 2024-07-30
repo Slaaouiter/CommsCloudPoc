@@ -1,0 +1,58 @@
+.vnos-amount{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.vnos-promotions-at-center{
+    background-color: #f6f6f6;
+    min-height: 7.5rem;
+}
+
+.vnos-promotions-at-browse-offer{
+    min-height: 2.5rem;
+}
+
+.vnos-promotion-title{
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.vnos-promotion-radios{
+    padding-top: 14px;
+}
+
+.vnos-promotion-radio-label{
+    font-size: 1rem;
+    color: black;
+}
+
+.vnos-center{
+    text-align: center;
+}
+
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input[type=radio]:checked {
+    border-color: black;
+    background-color: white;
+  }
+  
+  input[type=radio]:checked::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: black;
+  }
