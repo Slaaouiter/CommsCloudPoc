@@ -1,0 +1,57 @@
+[
+    {
+        "%vlocity_namespace%__ActionType__c": "Add/Update",
+        "%vlocity_namespace%__CardinalityCheckScope__c": "",
+        "%vlocity_namespace%__CatalogCategoryId__c": "",
+        "%vlocity_namespace%__ContextEntityFilterId__c": "",
+        "%vlocity_namespace%__ContextProductGroupKey__c": "5f7c570e-8959-7417-e333-c0afa6eb0571",
+        "%vlocity_namespace%__ContextProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "81deae9e-d55f-c5f4-95d1-fb6d3cfe7577",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/81deae9e-d55f-c5f4-95d1-fb6d3cfe7577",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__EffectiveFromDate__c": "2024-06-21T23:00:00.000Z",
+        "%vlocity_namespace%__EffectiveUntilDate__c": "",
+        "%vlocity_namespace%__GlobalGroupKey__c": "58901dea-5bce-1c93-8332-03daab20b5b6",
+        "%vlocity_namespace%__GlobalKey__c": "97219d7e-a9e3-d3ff-673a-f5acab7a0f3a",
+        "%vlocity_namespace%__IsActive__c": true,
+        "%vlocity_namespace%__IsUndoable__c": false,
+        "%vlocity_namespace%__MaxQuantity__c": 1,
+        "%vlocity_namespace%__MinQuantity__c": 1,
+        "%vlocity_namespace%__OfferId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "81deae9e-d55f-c5f4-95d1-fb6d3cfe7577",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/81deae9e-d55f-c5f4-95d1-fb6d3cfe7577",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__OfferProductGroupKey__c": "5f7c570e-8959-7417-e333-c0afa6eb0571",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "81deae9e-d55f-c5f4-95d1-fb6d3cfe7577",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/81deae9e-d55f-c5f4-95d1-fb6d3cfe7577",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ProductId__r.%vlocity_namespace%__GlobalKey__c": "81deae9e-d55f-c5f4-95d1-fb6d3cfe7577",
+        "%vlocity_namespace%__PromotionId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c88d8039-ccc6-cb90-ec04-8d1423d25f9e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Promotion__c/c88d8039-ccc6-cb90-ec04-8d1423d25f9e",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Promotion__c"
+        },
+        "%vlocity_namespace%__PromotionId__r.%vlocity_namespace%__GlobalKey__c": "c88d8039-ccc6-cb90-ec04-8d1423d25f9e",
+        "%vlocity_namespace%__Quantity__c": 1,
+        "%vlocity_namespace%__UndoableMessage__c": "",
+        "%vlocity_namespace%__UpdateScope__c": "Update Item Only",
+        "IsLocked": false,
+        "MayEdit": true,
+        "Name": "97219d7e-a9e3-d3ff-673a-f5acab7a0f3a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__PromotionItem__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__PromotionItem__c/%vlocity_namespace%__Promotion__c/c88d8039-ccc6-cb90-ec04-8d1423d25f9e/Product2/81deae9e-d55f-c5f4-95d1-fb6d3cfe7577"
+    }
+]
