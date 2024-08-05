@@ -1,0 +1,17 @@
+VlocityBuildLog.yaml
+.sfdx
+.ds_store
+scripts
+vlocity-temp
+manifest
+.forceignore
+Deploy.yaml
+Export.yaml
+VlocityBuildErrors.log
+jest.config.js
+sfdx-project.json
+.project
+.salesforce
+.settings
+node_modules
+.idea

@@ -19,6 +19,8 @@
         "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
     },
     "%vlocity_namespace%__VersionLabel__c": "",
+    "IsLocked": false,
+    "MayEdit": true,
     "Name": "Mobile Product Spec OT",
     "RecordTypeId": {
         "DeveloperName": "ObjectType",

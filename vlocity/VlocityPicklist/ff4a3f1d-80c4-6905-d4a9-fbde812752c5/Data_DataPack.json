@@ -15,6 +15,8 @@
     "%vlocity_namespace%__Type__c": "",
     "%vlocity_namespace%__UnitOfMeasureName__c": "",
     "%vlocity_namespace%__VersionLabel__c": "",
+    "IsLocked": false,
+    "MayEdit": true,
     "Name": "Data",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c",

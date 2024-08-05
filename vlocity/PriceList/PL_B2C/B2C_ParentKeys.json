@@ -6,6 +6,5 @@
     "PricingVariable/OT_STD_PRC_ADJ_PCT",
     "PricingVariable/REC_MNTH_STD_PRC",
     "PricingVariable/REC_MNTH_STD_PRC_ADJ_ABS",
-    "PricingVariable/REC_MNTH_STD_PRC_ADJ_PCT",
-    "PricingVariable/REC_MNTH_STD_PRC_TAX_EXCL"
+    "PricingVariable/REC_MNTH_STD_PRC_ADJ_PCT"
 ]

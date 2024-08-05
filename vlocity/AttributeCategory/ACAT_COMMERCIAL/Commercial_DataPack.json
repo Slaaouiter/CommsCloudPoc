@@ -18,6 +18,8 @@
     "%vlocity_namespace%__LockedFlg__c": false,
     "%vlocity_namespace%__Status__c": "",
     "%vlocity_namespace%__UIControlType__c": "On-Off",
+    "IsLocked": false,
+    "MayEdit": true,
     "Name": "Commercial",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c",

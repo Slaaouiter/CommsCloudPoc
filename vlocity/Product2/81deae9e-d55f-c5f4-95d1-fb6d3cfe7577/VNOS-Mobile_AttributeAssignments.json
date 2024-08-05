@@ -18,7 +18,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
         },
         "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_DATA",
-        "%vlocity_namespace%__AttributeName__c": "Dados",
+        "%vlocity_namespace%__AttributeName__c": "Data",
         "%vlocity_namespace%__ConfigurationDetail__c": "",
         "%vlocity_namespace%__ConfigurationStages__c": "",
         "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
@@ -230,7 +230,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
         },
         "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_DOWNLOAD_SPEED",
-        "%vlocity_namespace%__AttributeName__c": "Velocidade de download",
+        "%vlocity_namespace%__AttributeName__c": "Download Speed",
         "%vlocity_namespace%__ConfigurationDetail__c": "",
         "%vlocity_namespace%__ConfigurationStages__c": "",
         "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
@@ -462,7 +462,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
         },
         "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_UPLOAD_SPEED",
-        "%vlocity_namespace%__AttributeName__c": "Velocidade de upload",
+        "%vlocity_namespace%__AttributeName__c": "Upload speed",
         "%vlocity_namespace%__ConfigurationDetail__c": "",
         "%vlocity_namespace%__ConfigurationStages__c": "",
         "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
@@ -578,7 +578,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
         },
         "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_VOICE",
-        "%vlocity_namespace%__AttributeName__c": "Voz",
+        "%vlocity_namespace%__AttributeName__c": "Voice",
         "%vlocity_namespace%__ConfigurationDetail__c": "",
         "%vlocity_namespace%__ConfigurationStages__c": "",
         "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
@@ -702,7 +702,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
         },
         "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_VOICE_SMS",
-        "%vlocity_namespace%__AttributeName__c": "Voz / SMS",
+        "%vlocity_namespace%__AttributeName__c": "Voice / SMS",
         "%vlocity_namespace%__ConfigurationDetail__c": "",
         "%vlocity_namespace%__ConfigurationStages__c": "",
         "%vlocity_namespace%__CustomConfigUiTemplate__c": "",

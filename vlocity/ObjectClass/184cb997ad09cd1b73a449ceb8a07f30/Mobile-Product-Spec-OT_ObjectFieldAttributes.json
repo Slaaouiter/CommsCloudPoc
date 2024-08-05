@@ -27,6 +27,8 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/184cb997ad09cd1b73a449ceb8a07f30",
             "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
         },
+        "IsLocked": false,
+        "MayEdit": true,
         "Name": "042715af-3938-4307-0965-636c93b1e383",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectFieldAttribute__c"
@@ -59,6 +61,8 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/184cb997ad09cd1b73a449ceb8a07f30",
             "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
         },
+        "IsLocked": false,
+        "MayEdit": true,
         "Name": "5c434d9d-2ab9-cc9e-45ae-faec46bbe28c",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectFieldAttribute__c"
@@ -91,6 +95,8 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/184cb997ad09cd1b73a449ceb8a07f30",
             "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
         },
+        "IsLocked": false,
+        "MayEdit": true,
         "Name": "7f3cc7c5-7dae-76e4-fbb9-425d98d1325a",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectFieldAttribute__c"
@@ -123,6 +129,8 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/184cb997ad09cd1b73a449ceb8a07f30",
             "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
         },
+        "IsLocked": false,
+        "MayEdit": true,
         "Name": "1afb0423-a403-224d-1f2b-859c7a96fd03",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectFieldAttribute__c"
@@ -155,6 +163,8 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/184cb997ad09cd1b73a449ceb8a07f30",
             "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
         },
+        "IsLocked": false,
+        "MayEdit": true,
         "Name": "f4a64bae-0263-87cc-d6c8-5220a8b2603f",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectFieldAttribute__c"
@@ -187,6 +197,8 @@
             "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/184cb997ad09cd1b73a449ceb8a07f30",
             "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
         },
+        "IsLocked": false,
+        "MayEdit": true,
         "Name": "b013e5a0-7558-02bb-7962-53995efa8828",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectFieldAttribute__c"

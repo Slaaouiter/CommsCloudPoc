@@ -19,6 +19,8 @@
     "%vlocity_namespace%__SubType__c": "Standard",
     "%vlocity_namespace%__Type__c": "Price",
     "%vlocity_namespace%__ValueType__c": "Pricing Element",
+    "IsLocked": false,
+    "MayEdit": true,
     "Name": "One Time Std Price Adjustment Abs",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "%vlocity_namespace%__PricingVariable__c",
