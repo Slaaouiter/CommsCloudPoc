@@ -1,0 +1,24 @@
+projectPath: .
+expansionPath: vlocity
+manifest:
+- AttributeCategory/ACAT_COMMERCIAL
+- ObjectClass/104d9898c04874d0fbac36e125fa1369
+- ObjectClass/517349a3cdc1acf50617693e3ba33988
+- ObjectClass/184cb997ad09cd1b73a449ceb8a07f30
+- PriceList/PL_B2C
+- PricingVariable/OT_STD_PRC
+- PricingVariable/OT_STD_PRC_ADJ_ABS
+- PricingVariable/OT_STD_PRC_ADJ_PCT
+- PricingVariable/REC_MNTH_STD_PRC
+- PricingVariable/REC_MNTH_STD_PRC_ADJ_ABS
+- PricingVariable/REC_MNTH_STD_PRC_ADJ_PCT
+- VlocityPicklist/2ee648ab-3ffe-13c3-64b3-98c25696a72a
+- VlocityPicklist/5f63efe3-a39d-ed92-7b6e-38a02209d3bb
+- VlocityPicklist/59a5bad6-5297-517b-ce3c-a43aa8d8017d
+- VlocityPicklist/0884fe3f-976f-c324-1351-bab4f56f19a4
+- VlocityPicklist/ff4a3f1d-80c4-6905-d4a9-fbde812752c5
+- Product2/e21e52c4-25bf-4bb6-f45d-2a9308d7c32a
+- Product2/81deae9e-d55f-c5f4-95d1-fb6d3cfe7577
+- Promotion/c88d8039-ccc6-cb90-ec04-8d1423d25f9e
+- Promotion/d6f9d2be-1dbf-65f4-1037-00d3af10c6ed
+- Catalog/VNOS-Mobile
