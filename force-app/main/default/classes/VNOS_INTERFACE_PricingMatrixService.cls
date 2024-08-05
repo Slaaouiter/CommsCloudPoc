@@ -1,0 +1,3 @@
+public interface VNOS_INTERFACE_PricingMatrixService {
+  VNOS_DOMAIN_AttributePricingMatrixRows getAttributePricingMatrixRows(String attributeMatrixName);
+}

@@ -1,0 +1,55 @@
+<template>
+  <slot name="autoAppliedPromotionsAtTop">
+    <div class="nds-grid" lwc:if={hasAutoAppliedPromotionsAtTop}>
+      <template
+        for:each={autoAppliedPromotionsAtTop}
+        for:item="autoAppliedPromotion"
+      >
+        <div
+          key={autoAppliedPromotion.code}
+          class="vnos-auto-applied-promotions-at-top vnos-center"
+        >
+          {autoAppliedPromotion.name}
+        </div>
+      </template>
+    </div>
+  </slot>
+  <div class="nds-grid">
+    <slot name="productName">
+      <div class="nds-size--1-of-2">
+        <div
+          class="nds-dc-tile-text nds-m-bottom_x-large vnos-first-attribute"
+        >
+          {productName}
+        </div>
+      </div>
+
+      <!-- <div class="nds-size--1-of-2">
+        <div class="nds-grid nds-grid_align-end">
+          <vlocity_cmt-toggle
+            lwc:if={isLoyaltyPossible}
+            theme="nds"
+            type="toggle"
+            options={options}
+            toggle-enabled-label={withLoyaltyLabel}
+            toggle-disabled-label={withoutLoyaltyLabel}
+            onchange={handleLoyaltyOptionChange}
+            checked={hasLoyalty}
+          ></vlocity_cmt-toggle>
+          <vlocity_cmt-toggle
+            lwc:else
+            theme="nds"
+            type="toggle"
+            options={options}
+            toggle-enabled-label={withLoyaltyLabel}
+            toggle-disabled-label={withoutLoyaltyLabel}
+            onchange={handleLoyaltyOptionChange}
+            checked={hasLoyalty}
+            disabled
+          ></vlocity_cmt-toggle>
+        </div>
+        Why this duplication of toogle ? Because vlocity_cmt-toggle fails to refresh the component after updated disabled attributes.
+      </div> -->
+    </slot>
+  </div>
+</template>

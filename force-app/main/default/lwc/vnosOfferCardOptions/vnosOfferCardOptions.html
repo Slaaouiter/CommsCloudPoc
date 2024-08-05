@@ -1,0 +1,17 @@
+<template>
+  <div class="nds-grid nds-wrap">
+    <template for:each={options} for:item="option">
+      <div
+        key={option.value}
+        data-key={option.value}
+        class={option.style}
+        onclick={selectOption}
+      >
+        <p class="nds-text-body_regular">{option.value}</p>
+        <span class={option.priceStyle} lwc:if={hasMultipleOptions}>
+          {option.priceDifferenceWithSelectedProduct}
+        </span>
+      </div>
+    </template>
+  </div>
+</template>

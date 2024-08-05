@@ -1,0 +1,25 @@
+{
+    "%vlocity_namespace%__Code__c": "PL_B2C",
+    "%vlocity_namespace%__CountOfActiveEntries__c": 38,
+    "%vlocity_namespace%__CurrencyCode__c": "EUR",
+    "%vlocity_namespace%__Description__c": "Price List for B2C prices.",
+    "%vlocity_namespace%__EffectiveFromDate__c": "2021-12-31T23:00:00.000Z",
+    "%vlocity_namespace%__EffectiveUntilDate__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "5be699ab-516d-9804-804e-f2579a24b6ed",
+    "%vlocity_namespace%__IsActive__c": true,
+    "%vlocity_namespace%__LoyaltyCode__c": "PTS",
+    "%vlocity_namespace%__ParentPriceListId__c": "",
+    "%vlocity_namespace%__Pricebook2Id__c": {
+        "Name": "Standard Price Book",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+        "VlocityRecordSObjectType": "Pricebook2"
+    },
+    "%vlocity_namespace%__PricingElement__c": "B2C_PricingElements.json",
+    "%vlocity_namespace%__Sequence__c": "",
+    "Name": "B2C",
+    "RecordTypeId": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__PriceList__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__PriceList__c/PL_B2C"
+}

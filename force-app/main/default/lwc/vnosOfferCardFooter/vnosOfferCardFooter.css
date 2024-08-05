@@ -1,0 +1,40 @@
+.vnos-icon{
+    background-image: url(https://conteudos.meo.pt/Style%20Library/uzo/resources/images/pacotes/pacotes_icons-pacotes.svg);
+    background-size: 50px 435px;
+    background-repeat: no-repeat;
+    height:1.9rem;
+}
+.vnos-voice-sms-icon{
+    background-position: center -292px;
+}
+
+.vnos-data-icon{
+    background-position: center -260px;
+}
+.vnos-data-options{
+    font-size: 1rem;
+    color: black;
+}
+.vnos-voice{
+    font-size: 1rem;
+    color: black;
+}
+
+.vnos-promotion-radio-label{
+    font-size: 1rem;
+    color: black;
+}
+
+.vnos-txt-oferta{
+    color: #fffdfd;
+    background-color: black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 0 3px;
+    max-height : 2rem;
+}
+
+.vnos-align-vertical-center{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.vnos-offer-grid-view{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.vnos-offer-board{
+    min-height: 33.625rem;
+    border: 0.5px solid #ccc;
+    box-shadow: 0 1px 2px 0 rgba(17, 17, 17, 0.2);
+    padding: 1rem;
+}
