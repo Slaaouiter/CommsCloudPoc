@@ -1,0 +1,31 @@
+<template>
+    <div
+        class="nds-panel nds-grid nds-grid_vertical nds-nowrap nds-border_bottom nds-border_left nds-border_right nds-border_top nds-p-around_medium">
+        <div class="nds-text-heading_large nds-text-align_center">{translatedLabelsObj.ALT_Label_TotalOffer}</div>
+        <div class="nds-grid nds-grid_align-space nds-m-around_medium">
+            <div>
+                <div class="nds-text-heading_small nds-text-align_center">
+                    {translatedLabelsObj.ALT_Label_OneTimeCharge}</div>
+                <div class="nds-text-heading_medium nds-text-align_center">€{totalPrices.oneTime}
+                </div>
+            </div>
+            <div>
+                <div class="nds-text-heading_small nds-text-align_center">
+                    {translatedLabelsObj.ALT_Label_RecurringCharge}</div>
+                <div class="nds-text-heading_medium nds-text-align_center">
+                    €{totalPrices.recurring}</div>
+            </div>
+        </div>
+        <div class="nds-grid nds-grid_align-space nds-m-around_medium">
+            <button class="nds-button nds-button_brand"
+                onclick={addToCart}>{translatedLabelsObj.ALT_Action_AddToCart}</button>
+        </div>
+        <div class="nds-grid nds-wrap nds-grid_pull-padded" if:true={showErrors}>
+            <template for:each={messages} for:item="message" if:true={messages}>
+                <div class="nds-p-horizontal_small nds-size_1-of-1" key={message.messageId}>
+                    <div class="nds-text-color_error">{message.message}</div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

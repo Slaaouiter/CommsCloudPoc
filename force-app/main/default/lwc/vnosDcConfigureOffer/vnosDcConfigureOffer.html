@@ -1,0 +1,76 @@
+<template>
+    <div class="via-nds">
+        <div class="nds-dc-offer_config">
+
+            <div class="nds-dc-spinner slds-spinner_container" if:true={loading}>
+                <div role="status" class="nds-spinner nds-spinner_altice nds-spinner_medium" if:true={loading}>
+                    <span class="nds-assistive-text">Loading</span>
+                </div>
+            </div>
+            <div if:true={offer}>
+                <slot name="dc-offer-details">
+                    <slot name="dc-offer-title">
+                        <div class="img-wrapper"><img if:true={image} src={image.url} width="40px"><span
+                                class="nds-text-heading_large">{selectedProduct.name}</span></div>
+                    </slot>
+                    <div class="nds-grid nds-wrap nds-grid_pull-padded">
+                        <div
+                            class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_5-of-6 nds-large-size_8-of-12">
+                            <div class="nds-grid nds-wrap nds-grid_pull-padded">
+                                <div
+                                    class="nds-p-horizontal_small nds-size_1-of-1 nds-medium-size_1-of-1 nds-large-size_1-of-1 nds-color__background_gray-3">
+                                    <div class="nds-dc-offer-config-details">
+                                        <c-vnos-dc-offer-details catalog-code={catalogCode}
+                                            offer-code={offer.offerCode} current-offer={offer}
+                                            selected-product={selectedProduct}></c-vnos-dc-offer-details>
+                                    </div>
+
+                                </div>
+                                <div class="nds-grid nds-wrap nds-grid_pull-padded">
+                                    <template for:each={messages} for:item="message" if:true={messages}>
+                                        <div class="nds-p-horizontal_small nds-size_1-of-1" key={message.messageId}>
+                                            <div class="nds-text-color_error">{message.message}</div>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <div if:true={offer} style="width:100%" class="nds-m-top_large">
+                                    <c-vnos-dc-offer-included-addons
+                                        child-products={includedChildProducts}></c-vnos-dc-offer-included-addons>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_1-of-6 nds-large-size_4-of-12">
+                            <div>
+                                <c-vnos-dc-configure-offer-summary if:true={offer} total-prices={totalPrices}
+                                    messages={messages}></c-vnos-dc-configure-offer-summary>
+                            </div>
+                            <div class="nds-m-top_large">
+                                <c-vnos-dc-included-promotions
+                                    promotions={appliedPromotions}></c-vnos-dc-included-promotions>
+                            </div>
+                        </div>
+                    </div>
+                </slot>
+            </div>
+            <div if:true={offer}>
+                <vlocity_cmt-tabset id="tabTest" class="via-nds" theme="nds" active-tab-value="0">
+                    <vlocity_cmt-tab label={translatedLabelsObj.ALT_Label_AvailableAddons}>
+                        <div slot="content">
+                            <div if:true={offer} class="nds-dc-offer-group-sections">
+                                <c-vnos-dc-offer-available-addons
+                                    child-products={compatibleAvailableAddOns}></c-vnos-dc-offer-available-addons>
+                            </div>
+                        </div>
+                    </vlocity_cmt-tab>
+                    <vlocity_cmt-tab label={translatedLabelsObj.ALT_Label_AvailablePromotions}>
+                        <div slot="content">
+                            <c-vnos-excluded-items items={availablePromotions}></c-vnos-excluded-items>
+                        </div>
+                    </vlocity_cmt-tab>
+                </vlocity_cmt-tabset>
+            </div>
+        </div>
+    </div>
+</template>

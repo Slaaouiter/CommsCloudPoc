@@ -1,0 +1,27 @@
+<template>
+    <div class="via-nds">
+        <!-- offer details -->
+        <div class="nds-grid nds-wrap nds-grid_pull-padded" if:true={offer}>
+            <div
+                class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_4-of-6 nds-large-size_9-of-12 nds-p-top_small nds-p-bottom_small padding-15">
+                <div if:true={offer.attributes} for:each={offer.attributes} for:item="attributeRecord"
+                    key={attributeRecord.length}>
+                    <div for:each={attributeRecord} for:item="attribute" for:index="index" key={attribute.attributeId}
+                        if:false={attribute.hidden}>
+                        <c-vnos-dc-offer-detail attribute={attribute}></c-vnos-dc-offer-detail>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_2-of-6 nds-large-size_3-of-12 padding-15">
+                <div class="price-details">
+                    <c-vnos-dc-offer-payment-config price={selectedProduct.price}
+                        initial-amount={selectedProduct.initialAmount}></c-vnos-dc-offer-payment-config>
+                </div>
+            </div>
+        </div>
+        <div class="nds-dc-spinner slds-spinner_container" if:true={loading}>
+            <lightning-spinner alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+        </div>
+    </div>
+</template>

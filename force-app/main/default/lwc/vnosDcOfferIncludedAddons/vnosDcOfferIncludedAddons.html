@@ -1,0 +1,19 @@
+<template>
+    <div
+        class="nds-panel nds-grid nds-grid_vertical nds-nowrap nds-border_bottom nds-border_left nds-border_right nds-border_top">
+        <template for:each={childProducts} for:item="childProduct" if:true={childProducts}>
+            <div class="nds-panel__section nds-border_bottom" key={childProduct.id} style="min-height:171px">
+                <c-vnos-dc-offer-included-addon child-product={childProduct}></c-vnos-dc-offer-included-addon>
+            </div>
+            <!--<li class="nds-item" key={childProduct.id} style="height: 143px;padding: 20px;">
+                    
+                </li>-->
+        </template>
+
+    </div>
+    <div if:false={childProducts} class="addonsBlock__3nw8P emptyAddons__1jXwa"><span>Nothing selected; see add ons
+            below.</span><button class="coloredButton__95oX- seeAddonsButton__3oVih rightArrowLink__ba_QR" type="button"
+            data-analytics-link-type="link" data-analytics-link="See add ons" data-di-id="di-id-df8a7602-65f01338">See
+            add ons</button>
+    </div>
+</template>

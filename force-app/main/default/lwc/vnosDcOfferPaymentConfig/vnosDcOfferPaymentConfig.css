@@ -1,0 +1,12 @@
+.via-nds .nds-dc-offer-payment .nds-dc-offer-payment-config {
+    flex-direction: column;
+}
+
+.via-nds .nds-dc-offer-payment .nds-dc-offer-payment-config .nds-dc-offer-config-payment-plans {
+    border: none;
+    padding: 0;
+}
+
+.via-nds .line-through {
+    text-decoration: line-through;
+}

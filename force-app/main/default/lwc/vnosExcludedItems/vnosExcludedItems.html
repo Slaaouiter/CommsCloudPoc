@@ -1,0 +1,34 @@
+<template>
+    <div class="addonsBackground__2AwD2">
+        <div class="addonsContainer__3MRy_">
+            <div class="addons__3h5Sd">
+                <div class="addonsWrapper__1GpMN">
+                    <template for:each={items} for:item="item" if:false={item.included}>
+                        <div key={item.code} class="addon__2rH4f">
+                            <div class="contentWrapper__CFnIo">
+                                <div class="imgWrapper__22KlL" if:true={item.addon}><img src={item.productImage}
+                                        alt="Complete Wi-Fi disc" class="image__1b9qt"></div>
+                                <div class="content__kadlP">
+                                    <div class="mainInfo__1CtmG">
+                                        <h3 class="title__OtysS">{item.name}</h3>
+                                        <p class="description__3YF6O">{item.description}</p>
+                                    </div>
+                                    <div class="priceBlock__20UKP">
+                                        <div class="priceBlockInfo__cSyaW">
+                                            <p class="price__2Psu4">{item.displayText}
+                                            </p><span class="priceText__1bx1e">{item.chargeType}</span>
+                                        </div>
+                                        <button class="nds-button nds-button_neutral" if:true={item.canAdd}
+                                            data-attributecode={item.code} data-addon={item.addon}
+                                            data-promotion={item.promotion} onclick={addItem} type="button"
+                                            data-di-id="di-id-ca2bc4b8-41e6545a">Adicionar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

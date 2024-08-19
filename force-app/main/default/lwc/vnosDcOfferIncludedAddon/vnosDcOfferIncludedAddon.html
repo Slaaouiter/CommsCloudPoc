@@ -1,0 +1,93 @@
+<template>
+  <div class="nds-grid nds-wrap nds-grid_pull-padded">
+    <div
+      class="nds-p-horizontal_small nds-size_1-of-1 nds-medium-size_3-of-6 nds-large-size_6-of-12"
+    >
+      <div class="nds-media">
+        <div class="nds-media__figure">
+          <span class="nds-avatar nds-avatar_large">
+            <img alt="Person name" src={productImage} title="User avatar" />
+          </span>
+        </div>
+        <div class="nds-media__title">
+          <p>{childProduct.name}</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="nds-p-horizontal_small nds-size_1-of-1 nds-medium-size_3-of-6 nds-large-size_6-of-12"
+      style="margin-top: 20px"
+    >
+      <div class="nds-grid nds-wrap nds-grid_pull-padded">
+        <div
+          class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_2-of-6 nds-large-size_2-of-12"
+        >
+          <!--<div class="nds-text-heading_small nds-text-align_center">
+                        <vlocity_cmt-combobox theme="nds" value={quantity} options={comboboxQuantityRange}
+                            label={translatedLabelsObj.ALT_Label_Quantity} disabled={disabled}
+                            onchange={handleQtyChange} data-omni-input>
+                        </vlocity_cmt-combobox>
+                    </div>-->
+        </div>
+        <div
+          class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_4-of-6 nds-large-size_10-of-12"
+        >
+          <c-vnos-dc-offer-addons-priceinfo
+            price-info={priceInfo}
+          ></c-vnos-dc-offer-addons-priceinfo>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nds-grid nds-wrap nds-grid_pull-padded">
+    <div
+      class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_4-of-6 nds-large-size_9-of-12"
+    >
+      <div class="nds-grid">
+        <template
+          if:true={attributes}
+          for:each={attributes}
+          for:item="attribute"
+        >
+          <div class="via-nds" key={attribute.attributeId}>
+            <c-vnos-dc-offer-addon-attribute
+              if:false={attribute.hidden}
+              onattributechange={handleAttributeChange}
+              attribute={attribute}
+              offer-code={childProduct.offerCode}
+            ></c-vnos-dc-offer-addon-attribute>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div
+      class="nds-p-horizontal_small nds-size_1-of-2 nds-medium-size_2-of-6 nds-large-size_3-of-12"
+    >
+      <button
+        class="nds-button nds-button_neutral"
+        onclick={removeAddon}
+        if:true={canRemove}
+      >
+        <!--<div if:true={isLoading} role="status"
+                    class="nds-spinner nds-spinner_brand nds-spinner_x-small nds-input__spinner">
+                    <span class="nds-assistive-text">Loading</span>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <circle cy="50">
+                            <animateTransform attributeName="transform" dur="1s" type="translate"
+                                values="0 15 ; 0 -15; 0 15" repeatCount="indefinite" begin="0.1"></animateTransform>
+                        </circle>
+                        <circle cy="50">
+                            <animateTransform attributeName="transform" dur="1s" type="translate"
+                                values="0 10 ; 0 -10; 0 10" repeatCount="indefinite" begin="0.2"></animateTransform>
+                        </circle>
+                        <circle cy="50">
+                            <animateTransform attributeName="transform" dur="1s" type="translate"
+                                values="0 5 ; 0 -5; 0 5" repeatCount="indefinite" begin="0.3"></animateTransform>
+                        </circle>
+                    </svg>
+                </div>-->
+        <div>{translatedLabelsObj.ALT_Action_Remove}</div>
+      </button>
+    </div>
+  </div>
+</template>

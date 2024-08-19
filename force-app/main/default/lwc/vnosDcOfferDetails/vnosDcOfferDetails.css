@@ -1,0 +1,36 @@
+/*.via-nds .offer-details {
+    background: #F7F7F7;
+    width: 305px;
+    padding: 10px;
+}
+
+
+.via-nds .nds-dc-offer-details {
+    display: flex;
+    gap: 20px;
+}
+
+.via-nds .divider {
+    height: 1px;
+    margin: 5px;
+    background-color: #e3e3e3;
+    opacity: .3;
+}
+
+.via-nds .nds-dc-offer-button-set {
+    flex-direction: row;
+    gap: 5px;
+}
+
+.via-nds .nds-dc-offer-attribute-label {
+    display: flex;
+    width: auto;
+}*/
+
+dt {
+    margin-bottom: 5px;
+}
+
+.padding-15 {
+    padding: 15px;
+}

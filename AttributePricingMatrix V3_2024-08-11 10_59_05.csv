@@ -1,0 +1,11 @@
+SourceProductName,SourceProductCode,CharacteristicName,CharacteristicValue,TargetCharacteristicName,TargetCharacteristicValue,MRC,NRC,PitchOrder,ItemName
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,4GB;500 minutes/SMS,Velocidade de upload;Velocidade de download,100Mbps;150Mbps,15,0,6,VNOS - 4GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,4GB;50 minutes/SMS,Velocidade de upload;Velocidade de download,40Mbps;100Mbps,10,0,5-3,VNOS - 4GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,1GB;500 minutes/SMS,Velocidade de upload;Velocidade de download,100Mbps;150Mbps,5,0,5-2,VNOS - 1GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,1GB;50 minutes/SMS,Velocidade de upload;Velocidade de download,40Mbps;100Mbps,2,0,5-1,VNOS - 1GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,5GB;500 minutes/SMS,Velocidade de upload;Velocidade de download,100Mbps;150Mbps,25,0,4-3,VNOS - 5GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,5GB;50 minutes/SMS,Velocidade de upload;Velocidade de download,40Mbps;100Mbps,20,0,4-2,VNOS - 5GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,6GB;500 minutes/SMS,Velocidade de upload;Velocidade de download,100Mbps;150Mbps,28,0,4-1,VNOS - 6GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,6GB;50 minutes/SMS,Velocidade de upload;Velocidade de download,40Mbps;100Mbps,25,0,3,VNOS - 6GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,10GB;500 minutes/SMS,Velocidade de upload;Velocidade de download,100Mbps;150Mbps,35,0,2,VNOS - 10GB
+VNOS Mobile,OFFERING_VNOS_MOBILE,Dados;Voz / SMS,10GB;50 minutes/SMS,Velocidade de upload;Velocidade de download,40Mbps;100Mbps,30,0,1,VNOS - 10GB

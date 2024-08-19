@@ -1,0 +1,62 @@
+<template>
+    <ul if:true={show}>
+        <div class="nds-dc-radio-selection">
+            <div class="via-nds">
+                <div>
+                    <slot name="dc-group-selection-radio-wrapper">
+                        <li class="nds-item nds-dc-nav_type">
+                            <article class="nds-tile nds-tile_board nds-dc-tile_board nds-m-top_small">
+                                <div class="nds-dc-img_addon">
+                                    <img src={productImage} />
+                                </div>
+                                <div class="nds-dc-details_addon">
+                                    <div class="nds-dc-desc_part"><label for="Up to 150 National Mins-165"><span
+                                                title="Up to 150 National Mins"
+                                                class="nds-tile__title nds-truncate nds-dc-plan_name">{childProduct.name}</span></label>
+                                        <slot name="dc-offer-description">
+                                            <div class="nds-tile__detail nds-dc-plan_item-description">
+                                                {childProduct.description}</div>
+                                        </slot>
+                                    </div>
+                                    <div class="nds-grid nds-dc-plan_item-details nds-dc-single_price">
+                                        <div class="nds-col nds-dc-plan_item-price-section nds-price_addon">
+                                            <span>{prices.price}</span>
+                                            <p class="nds-dc-payment_type">
+                                                {prices.paymentType}</p>
+                                        </div>
+                                        <button class="nds-button nds-button_neutral" onclick={updateAddon}
+                                            if:true={canAdd}>
+                                            <!--<div if:true={isLoading} role="status"
+                                                class="nds-spinner nds-spinner_brand nds-spinner_x-small nds-input__spinner">
+                                                <span class="nds-assistive-text">Loading</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 100 100">
+                                                    <circle cy="50">
+                                                        <animateTransform attributeName="transform" dur="1s"
+                                                            type="translate" values="0 15 ; 0 -15; 0 15"
+                                                            repeatCount="indefinite" begin="0.1"></animateTransform>
+                                                    </circle>
+                                                    <circle cy="50">
+                                                        <animateTransform attributeName="transform" dur="1s"
+                                                            type="translate" values="0 10 ; 0 -10; 0 10"
+                                                            repeatCount="indefinite" begin="0.2"></animateTransform>
+                                                    </circle>
+                                                    <circle cy="50">
+                                                        <animateTransform attributeName="transform" dur="1s"
+                                                            type="translate" values="0 5 ; 0 -5; 0 5"
+                                                            repeatCount="indefinite" begin="0.3"></animateTransform>
+                                                    </circle>
+                                                </svg>
+                                            </div>-->
+                                            <div>{translatedLabelsObj.ALT_Action_Add}</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </slot>
+                </div>
+            </div>
+        </div>
+    </ul>
+</template>

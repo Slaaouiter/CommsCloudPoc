@@ -1,0 +1,22 @@
+<template>
+    <div class="via-nds">
+        <slot name="dc-offer-group-wrapper">
+            <div class="nds-dc-offer_group">
+                <div class="nds-dc-offer_navigation" if:true={childProducts.length}>
+                    <fieldset id="01t6g000000OIQOAA4-164" class="nds-form-element nds-dc-offers_fieldset">
+                        <div class="nds-dc-plan_options nds-dc-plan_options-child-products">
+                            <div class="nds-grid nds-wrap">
+                                <div for:each={childProducts} for:item="childProduct" key={childProduct.id}
+                                    class="nds-size--1-of-1 nds-small-size--1-of-1 nds-medium-size--1-of-2 nds-large-size--1-of-3 nds-dc-plan_board">
+                                    <c-vnos-dc-offer-available-addon
+                                        child-product={childProduct}></c-vnos-dc-offer-available-addon>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="nds-dc-offer_group-separator"></div>
+            </div>
+        </slot>
+    </div>
+</template>

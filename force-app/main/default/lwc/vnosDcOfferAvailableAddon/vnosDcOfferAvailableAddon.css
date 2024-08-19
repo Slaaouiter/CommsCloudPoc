@@ -1,0 +1,62 @@
+.via-nds .nds-dc-nav_type .nds-dc-tile_board {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.via-nds .nds-dc-img_addon {
+    width: 90px;
+}
+
+.via-nds .nds-price_addon {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.via-nds .nds-dc-details_addon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nds-button{
+    width: 100%;
+}
+
+.nds-button_neutral {
+    color: black;
+    background-color: white;
+}
+
+.nds-button_neutral:focus, .nds-button_neutral:hover {
+    box-shadow: unset;
+    color: white;
+    background-color: black;
+}
+
+.via-nds .nds-dc-nav_type .nds-dc-single_price {
+    flex-direction: column;
+}
+
+.via-nds .nds-dc-addon-loading {
+    color: transparent;
+}
+
+.via-nds .nds-spinner_brand svg circle {
+    fill: #fff;
+}
+
+.nds-dc-nav_type .nds-dc-plan_item-description {
+    width: 264px;
+    padding: 0.625rem 0 0rem 0rem;
+}
+
+.nds-dc-nav_type .nds-dc-plan_item-price-section {
+    font-size: 1.2rem;
+}
+
+.nds-dc-single_price {
+    margin: 0;
+}

@@ -1,0 +1,10 @@
+<template>
+    <div class="nds-col">
+        <div if:true={isDropdown} if:false={attribute.hidden}>
+            <c-vnos-combobox theme="nds" options={attribute.values} label={attribute.label}
+                value={attribute.userValues} required={attribute.required} onchange={handleChange} disabled={readonly}
+                data-omni-input>
+            </c-vnos-combobox>
+        </div>
+    </div>
+</template>

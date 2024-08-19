@@ -1,0 +1,9 @@
+<template>
+    <div class="nds-text-heading_small">{translatedLabelsObj.ALT_Label_AppliedPromotions}</div>
+    <ul class="nds-m-top_small">
+        <template for:each={promotions} for:item="promotion">
+            <li key={promotion.code}>{promotion.name}
+            </li>
+        </template>
+    </ul>
+</template>

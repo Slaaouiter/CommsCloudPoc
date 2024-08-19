@@ -1,0 +1,10 @@
+.via-nds .img-wrapper {
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.nds-grid_pull-padded {
+    margin-right: -0.35rem;
+    margin-left: -0.35rem;
+}

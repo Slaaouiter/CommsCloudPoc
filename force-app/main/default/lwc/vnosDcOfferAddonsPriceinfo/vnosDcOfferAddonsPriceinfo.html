@@ -1,0 +1,9 @@
+<template>
+    <div class="via-nds">
+        <div if:true={hasAdjustment} class="nds-badge nds-text-align_center">{adjustment.label}
+        </div>
+        <div class="nds-text-heading_small nds-text-align_center">{prices.price}</div>
+        <div if:true={hasAdjustment} class="nds-text-title nds-text-align_center line-through">{adjustment.base}</div>
+        <div class="nds-text-title nds-text-align_center">{prices.paymentType}</div>
+    </div>
+</template>
